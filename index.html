@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wikipedia Search</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-language="english" data-colortheme="white">
+	<header draggable="false">
+		<div class="custom-settings">
+			<div id="icon-theme" draggable="false" onclick="toggleElementColorTheme(event)"><img src="./img/moon.svg" alt="moon" draggable="false"></div>
+			<div class="language-settings">
+				<div class="choose-language-block" onclick="toggleElementLanguage(event)"><span>Site Language:</span><span id="site-lg" style="color: #0094D8;">English</span><img id="arrow-symbol" data-arrow="arrow-down-black" src="./img/keyboard_arrow_down_black_24dp.svg" alt="arrow-down" draggable="false"></div>
+				<div class="container-language" onclick="chooseLanguage(event)">
+					<div class="drop-down-language">
+						<div class="flag-lg" data-language="english">
+							<img src="./img/united-states_flag.png" alt="United-States-Flag" data-language="english"><span id="lg-en" data-language="english">English</span>
+						</div>
+						<div class="flag-lg" data-language="portuguese">
+							<img src="./img/brazil-flag.svg" alt="Brasil-Flag" data-language="portuguese"><span id="lg-pt" data-language="portuguese">Portuguese</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img draggable="false" src="./img/wikipedia-logo.png" alt="wikipedia-logo">
+		<h1>Wikipedia Search</h1>
+	</header>
+	<main>
+		<div class="container-input-text">
+			<input type="text" id="inputText">
+		</div>
+		<div class="container-result"></div>
+	</main>
+	<script src="./js/app.js"></script>
+</body>
+</html>
