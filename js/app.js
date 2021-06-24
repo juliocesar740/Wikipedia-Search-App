@@ -1,11 +1,13 @@
 window.addEventListener('DOMContentLoaded', function () {
 
 	document.body.dataset.language = 'en'; //default language
+	document.documentElement.lang = 'en';
 	document.body.dataset.colortheme = 'white'; //default color theme
 
 	// Language 
 	if (localStorage.getItem('language')) {
 		document.body.dataset.language = localStorage.getItem('language');
+		document.documentElement.lang = localStorage.getItem('language');
 	}
 
 	switch (document.body.dataset.language) {
