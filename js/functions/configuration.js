@@ -1,15 +1,10 @@
 function configuration() {
 
-	document.body.dataset.language = 'en'; //default language
-	document.documentElement.lang = 'en';
-	document.body.dataset.colortheme = 'white'; //default color theme
+	document.body.dataset.language = localStorage.getItem('language') ?? 'en';
+	document.documentElement.lang = localStorage.getItem('language') ?? 'en';
+	document.body.dataset.colortheme = localStorage.getItem('theme') ?? 'white'; 
 
 	// Language 
-	if (localStorage.getItem('language')) {
-		document.body.dataset.language = localStorage.getItem('language');
-		document.documentElement.lang = localStorage.getItem('language');
-	}
-
 	switch (document.body.dataset.language) {
 		case 'en':
 			document.querySelector('#inputText').placeholder = 'Search';
@@ -30,10 +25,6 @@ function configuration() {
 	}
 
 	// Color
-	if (localStorage.getItem('theme')) {
-		document.body.dataset.colortheme = localStorage.getItem('theme');
-	}
-
 	switch (document.body.dataset.colortheme) {
 
 		case 'white':
