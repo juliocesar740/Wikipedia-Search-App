@@ -10,6 +10,7 @@ function toggleElementColorTheme(e) {
          document.querySelector('#site-lg').style.color = '#ffe600';
          document.querySelector('.container-language').style.border = '2.5px solid var(--secondary-white)';
          document.querySelector('.container-language').style.backgroundColor = 'var(--primary-black)';
+         document.querySelector('.sign-up').style.backgroundColor = 'var(--primary-white)';
 
          //check the arrow icons to set their colors
          if (document.querySelector('#arrow-symbol').dataset.arrow === 'arrow-down-black') {
@@ -47,6 +48,7 @@ function toggleElementColorTheme(e) {
          document.querySelector('#site-lg').style.color = '#0094D8';
          document.querySelector('.container-language').style.border = '2.5px solid var(--secondary-black)';
          document.querySelector('.container-language').style.backgroundColor = 'var(--primary-white)';
+         document.querySelector('.sign-up').style.backgroundColor = 'var(--primary-black)';
 
          //check the arrow icons to set their colors
          if (document.querySelector('#arrow-symbol').dataset.arrow === 'arrow-down-white') {

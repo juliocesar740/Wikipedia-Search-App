@@ -160,18 +160,8 @@ header h1{
 	background-color: var(--secondary-white);
 }
 
-.container-language:before{
-	position: absolute;
-	content: '';
-	top: -13px;
-	left: 135px;
-	background-color: #ffffff;
-	clip-path: polygon(50% 0, 100% 100%, 0 100%);
-	width: 12.5px;
-	height: 12.5px;
-}
-
 .container-language-active{
+   position: relative;
 	visibility: visible;
 	opacity: 1;
 	cursor: pointer;
@@ -182,6 +172,16 @@ header h1{
 	display: inline-flex;
 	justify-content: center;
 	column-gap: 15px;
+}
+
+.sign-up{
+   position: absolute;
+   top: -13px;
+	left: 128px;
+	background-color: #ffffff;
+	clip-path: polygon(50% 0, 100% 100%, 0 100%);
+	width: 12.5px;
+	height: 12.5px;
 }
 
 .flag-lg{
@@ -195,7 +195,7 @@ header h1{
 }
 
 .flag-lg:hover{
-	background-color: rgb(150, 150, 150);
+	background-color: rgb(165, 171, 172);
 }
 
 .flag-lg>img{

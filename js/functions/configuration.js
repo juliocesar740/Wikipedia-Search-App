@@ -40,6 +40,7 @@ function configuration() {
 			document.querySelector('#arrow-symbol').src = './img/keyboard_arrow_down_black_24dp.svg';
 			document.querySelector('#arrow-symbol').dataset.arrow = 'arrow-down-black';
 			localStorage.setItem('searchResultThemeClass', 'container-search-result-theme-light');
+         document.querySelector('.sign-up').style.backgroundColor = 'var(--primary-black)';
 			break;
 
 		case 'black':
@@ -55,6 +56,7 @@ function configuration() {
 			document.querySelector('#arrow-symbol').src = './img/keyboard_arrow_down_white_24dp.svg';
 			document.querySelector('#arrow-symbol').dataset.arrow = 'arrow-down-white';
 			localStorage.setItem('searchResultThemeClass', 'container-search-result-theme-black');
+         document.querySelector('.sign-up').style.backgroundColor = 'var(--primary-white)';
 			break;
 	}
 
